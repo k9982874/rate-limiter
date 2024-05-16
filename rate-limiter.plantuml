@@ -1,0 +1,14 @@
+@startuml
+APP -> Limiter: Start
+Limiter -> Serializer: Restore the data
+loop
+APP -> Limiter: Ary Acquire
+alt Success
+APP -> APP: Do Something
+else
+APP -> APP: Error Handling
+end
+end
+APP -> Limiter: Stop
+Limiter -> Serializer: Save the data
+@enduml

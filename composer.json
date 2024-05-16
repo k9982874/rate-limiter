@@ -1,0 +1,30 @@
+{
+    "name": "k9982874/rate-limiter",
+    "type": "library",
+    "description": "A traffic throttling library",
+    "keywords": ["throttle", "rate", "limit"],
+    "homepage": "https://github.com/k9982874/rate-limiter",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Kevin Zhou",
+            "email": "k9982874@gmail.com",
+            "homepage": "https://github.com/k9982874/rate-limiter",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"RateLimiter\\": "src"},
+        "files": [
+            "src/index.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.6",
+        "predis/predis": "^2.2"
+    },
+    "minimum-stability": "dev",
+    "archive": {
+        "exclude": ["/tests"]
+    }
+}
